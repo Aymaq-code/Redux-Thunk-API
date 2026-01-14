@@ -1,0 +1,200 @@
+.mobileMenu__backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 40;
+}
+
+.mobileMenu__panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 85%;
+  max-width: 384px;
+  background-color: var(--color-primary);
+  z-index: 50;
+  overflow-y: auto;
+}
+
+.mobileMenu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.mobileMenu__title {
+  font-weight: 700;
+  color: var(--light-color);
+}
+
+.mobileMenu__title-primary {
+  color: var(--color-tertiary);
+}
+
+.mobileMenu__close-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-color);
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.mobileMenu__close-btn:hover {
+  color: var(--light-color);
+}
+
+/* Navigation */
+.mobileMenu__nav {
+  padding: 20px;
+}
+
+.mobileMenu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileMenu__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  color: var(--light-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mobileMenu__item:hover {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+}
+
+.mobileMenu__item-label {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.mobileMenu__item-badge {
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-color: var(--red-color);
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+/* Quick Find Section */
+.mobileMenu__section {
+  margin-top: 24px;
+}
+
+.mobileMenu__section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--light-color);
+  margin-bottom: 12px;
+  padding: 0 16px;
+}
+
+.mobileMenu__category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileMenu__category-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: var(--light-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mobileMenu__category-item:hover {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+}
+
+.mobileMenu__category-icon {
+  font-size: 2rem;
+  color: inherit;
+}
+
+.mobileMenu__category-name {
+  font-weight: 500;
+}
+
+/* Daily Offers */
+.mobileMenu__daily-offer {
+  margin-top: 24px;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.mobileMenu__daily-offer-text {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Call Center */
+.mobileMenu__call {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  color: var(--light-color);
+  border: 1px solid var(--color-tertiary);
+  border-radius: 16px;
+}
+
+.mobileMenu__call-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--color-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-color);
+}
+
+.mobileMenu__call-info {
+  color: hsl(var(--primary-foreground));
+}
+
+.mobileMenu__call-label {
+  font-size: 0.875rem;
+  color: hsl(var(--accent) / 0.8);
+}
+
+.mobileMenu__call-number {
+  font-weight: 600;
+}
+
+/* Hide on large screens */
+@media screen and (min-width: 1024px) {
+  .mobileMenu__backdrop,
+  .mobileMenu__panel {
+    display: none;
+  }
+}

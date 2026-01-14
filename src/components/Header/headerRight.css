@@ -1,0 +1,118 @@
+.headerRight {
+  color: hsl(var(--primary-foreground));
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.headerRight--compact {
+  gap: 8px;
+}
+
+.headerRight--large {
+  gap: 32px;
+}
+
+/* Call Center */
+.headerRight__call {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  opacity: 0.9;
+}
+
+.headerRight__call-icon {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerRight__call-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerRight__call-label {
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: var(--color-tertiary);
+}
+
+/* Actions */
+.headerRight__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerRight__action-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: inherit;
+}
+
+.headerRight__action-btn:hover {
+  border-color: var(--color-tertiary);
+}
+
+.headerRight__action-btn--md {
+  width: 44px;
+  height: 44px;
+}
+
+.headerRight__cart-badge {
+  position: absolute;
+  right: -4px;
+  top: -2px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerRight__separator {
+  display: block;
+  width: 1px;
+  height: 32px;
+  background-color: var(--color-secondary);
+  margin: 0 8px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .headerRight__call {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerRight__separator {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .headerRight__action-btn--hide-sm {
+    display: none;
+  }
+}
