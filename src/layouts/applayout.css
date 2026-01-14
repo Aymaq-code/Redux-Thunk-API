@@ -1,0 +1,13 @@
+.appLayout {
+  height: 100vh;
+}
+.containt {
+  max-width: 130rem;
+  margin: 10rem auto;
+}
+
+@media screen and (min-width: 1600px) {
+  .containt {
+    max-width: 160rem;
+  }
+}
