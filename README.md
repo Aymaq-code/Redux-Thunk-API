@@ -1,16 +1,63 @@
-# React + Vite
+🛒 Redux Toolkit Store Project (Thunk API)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + Redux Toolkit store application built with Vite, demonstrating real-world state management using Redux Toolkit, createAsyncThunk, and a shopping cart system.
+This project fetches products from an external API, allows searching and filtering, and manages a fully functional cart.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshot
 
-## React Compiler
+![App Screenshot](./src/assets/redux-1.webp)
+![App Screenshot](./src/assets/redux-2.webp)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🌏 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Click here to see the live demo](https://aymaq-code.github.io/Redux-Thunk-API/)
+
+---
+
+🚀 Features
+
+⚛️ Built with React + Vite
+
+🧰 State management using Redux Toolkit
+
+🌐 Async data fetching with createAsyncThunk
+
+🛍️ Product list fetched from Fake Store API
+
+🔍 Search products by text
+
+🗂️ Filter products by category
+
+➕ Add items to cart
+
+➖ Increase / decrease item quantity
+
+❌ Remove items from cart
+
+🧹 Clear entire cart
+
+📱 Responsive UI with reusable components
+
+🧭 Client-side routing
+
+---
+
+🧠 Technologies Used
+
+React 18
+
+Redux Toolkit
+
+Redux Thunk (via createAsyncThunk)
+
+Vite
+
+JavaScript (ES6+)
+
+CSS (modular per component)
+
+Fake Store API
